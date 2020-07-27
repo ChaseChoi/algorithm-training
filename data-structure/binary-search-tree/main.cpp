@@ -6,4 +6,7 @@ int main() {
     BinarySearchTree* bst = new BinarySearchTree();
     bst->build();
     bst->show();
+
+    bst->remove(9);
+    bst->show();
 }

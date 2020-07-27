@@ -12,9 +12,12 @@ class BinarySearchTree {
         BinarySearchTree(): root(nullptr) {}
         void build();
         void show();
+        Node* findMin(Node*);
+        void remove(int);
     private:
         Node* root;
         Node* insert(int, Node*);
+        Node* remove(int, Node*);
         void showInOrder(Node*);
 };
 #endif
